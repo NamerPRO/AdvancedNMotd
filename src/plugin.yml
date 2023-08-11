@@ -1,6 +1,6 @@
   #                                #
  #                                  #
-#   AdvancedNMotd - ~10.0.0 Release   #
+#   AdvancedNMotd - ~10.0.1 Release   #
  #                                  #
   #                                #
 
@@ -10,7 +10,7 @@
 name: AdvancedNMotd
 main: ru.namerpro.AdvancedNMotd.Bukkit.Main
 author: NamerPRO
-version: 10.0.0
+version: 10.0.1
 load: POSTWORLD
 api-version: 1.13
 website: https://www.spigotmc.org/resources/advancednmotd-let-your-motd-smile.58677/

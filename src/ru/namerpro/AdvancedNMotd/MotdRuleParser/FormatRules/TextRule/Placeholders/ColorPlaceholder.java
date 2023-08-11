@@ -84,8 +84,8 @@ public class ColorPlaceholder implements IPlaceholder {
             if (clientVersion >= Information.minumalClientVersionThatSupportsColors && Information.areColorsSupportedByServer) {
                 parsedLine = lineToParse.substring(0, limits.start) + ChatColor.of(fromColorAsString) + lineToParse.substring(limits.end + 1);
             } else {
-                if (ConfigurationManager.config.getBoolean("AdvancedNMotd.Configuration.Downsample") && ConfigurationManager.colors.contains("Downsample.Colors." + fromColorAsString)) {
-                    parsedLine = lineToParse.substring(0, limits.start) + ConfigurationManager.colors.getString("Downsample.Colors." + fromColorAsString) + lineToParse.substring(limits.end + 1);
+                if (ConfigurationManager.config.getBoolean("AdvancedNMotd.Configuration.Downsample") && ConfigurationManager.downsample.contains("Downsample.Colors." + fromColorAsString)) {
+                    parsedLine = lineToParse.substring(0, limits.start) + ConfigurationManager.downsample.getString("Downsample.Colors." + fromColorAsString) + lineToParse.substring(limits.end + 1);
                 } else {
                     parsedLine = lineToParse.substring(0, limits.start) + getClosestLegacyColor(startR, startG, startB) + lineToParse.substring(limits.end + 1);
                 }
@@ -170,8 +170,8 @@ public class ColorPlaceholder implements IPlaceholder {
                 ++characterIndex;
             }
         } else {
-            if (ConfigurationManager.config.getBoolean("AdvancedNMotd.Configuration.Downsample") && ConfigurationManager.colors.contains("Downsample.Gradient." + fromColorAsString + "->" + toColor)) {
-                coloredPlaceholderText.append(ConfigurationManager.colors.getString("Downsample.Gradient." + fromColorAsString + "->" + toColor));
+            if (ConfigurationManager.config.getBoolean("AdvancedNMotd.Configuration.Downsample") && ConfigurationManager.downsample.contains("Downsample.Gradient." + fromColorAsString + "->" + toColor)) {
+                coloredPlaceholderText.append(ConfigurationManager.downsample.getString("Downsample.Gradient." + fromColorAsString + "->" + toColor));
             } else {
                 coloredPlaceholderText.append(getClosestLegacyColor(startR, startG, startB));
             }

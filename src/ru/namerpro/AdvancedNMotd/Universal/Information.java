@@ -30,7 +30,10 @@ public class Information {
 
     static {
         final File jarPathAsFile = new File(Information.class.getProtectionDomain().getCodeSource().getLocation().getPath());
-        jarPath = jarPathAsFile.getPath().replace("%20", " ");
+
+        String possibleJarPath = jarPathAsFile.getPath().replace("%20", " ");
+        jarPath = (possibleJarPath.charAt(0) == '/') ? possibleJarPath.substring(1) : possibleJarPath;
+
         final String pluginsFolderPath = jarPathAsFile.getParentFile().getPath().replace("%20", " ");
         resourceFolderPath = pluginsFolderPath + "/AdvancedNMotd";
         pluginVersion = "10.0.0";
