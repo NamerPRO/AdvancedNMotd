@@ -1,0 +1,2 @@
+Depend on how you configure you motd an attempt will be made to take one icon from certain icons from this folder and set it as your server favicon.
+Make sure that only 64x64 images are present in the folder except this file.

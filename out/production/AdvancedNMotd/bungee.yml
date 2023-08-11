@@ -1,0 +1,13 @@
+  #                                #
+ #                                  #
+#   AdvancedNMotd - ~10.0.0 Release   #
+ #                                  #
+  #                                #
+
+#Official download link:
+#https://www.spigotmc.org/resources/advancednmotd-let-your-motd-smile.58677/
+
+name: AdvancedNMotd
+main: ru.namerpro.AdvancedNMotd.BungeeCord.Main
+author: NamerPRO
+version: 10.0.0

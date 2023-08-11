@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ProtocolLib510">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Recovery/_MinecraftRelated/_SpigotAPI/ProtocolLib/ProtocolLib510.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
