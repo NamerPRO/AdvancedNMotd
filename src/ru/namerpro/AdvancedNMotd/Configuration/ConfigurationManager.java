@@ -32,7 +32,7 @@ public class ConfigurationManager {
 	public static IConfiguration placeholders;
 	public static IConfiguration rules;
 	public static IConfiguration data;
-	public static IConfiguration colors;
+	public static IConfiguration downsample;
 	public static IConfiguration config;
 
 	private static IConfigurationFactory factory = null;
@@ -119,7 +119,7 @@ public class ConfigurationManager {
 		rules = createAdvancedNMotdConfigurationFile("rules.yml", "aliases/", false);
 		data = createAdvancedNMotdConfigurationFile("data.yml", "", false);
 		if (Information.areColorsSupportedByServer) {
-			colors = createAdvancedNMotdConfigurationFile("downsample.yml", "", false);
+			downsample = createAdvancedNMotdConfigurationFile("downsample.yml", "", false);
 		}
 		config = createAdvancedNMotdConfigurationFile("config.yml", "", !Information.areColorsSupportedByServer);
 

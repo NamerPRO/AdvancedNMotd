@@ -44,6 +44,7 @@ public abstract class AdvancedNMotdExtension {
         try {
             File extensionFile = new File(getClass().getProtectionDomain().getCodeSource().getLocation().getPath());
             jarPath = extensionFile.getPath().replace("%20", " ");
+            jarPath = (jarPath.charAt(0) == '/') ? jarPath.substring(1) : jarPath;
             String jarFolderPath = extensionFile.getParentFile().getPath().replace("%20", " ");
 
             InputStream passportStream = new URL("jar:file:/" + jarPath + "!/passport.yml").openStream();

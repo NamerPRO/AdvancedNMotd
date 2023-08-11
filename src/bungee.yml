@@ -1,6 +1,6 @@
   #                                #
  #                                  #
-#   AdvancedNMotd - ~10.0.0 Release   #
+#   AdvancedNMotd - ~10.0.1 Release   #
  #                                  #
   #                                #
 
@@ -10,4 +10,4 @@
 name: AdvancedNMotd
 main: ru.namerpro.AdvancedNMotd.BungeeCord.Main
 author: NamerPRO
-version: 10.0.0
+version: 10.0.1
