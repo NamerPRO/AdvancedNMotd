@@ -10,7 +10,7 @@ assignees: ''
 - [ ] You are using the latest AdvancedNMotd API
 - [ ] This is not an issue caused by another extension
 - [ ] This question was not already asked
-- [ ] You used api in accordance with documentation
+- [ ] You used API in accordance with documentation
 
 **Describe the question**
 A clear and concise description of what your question is.
