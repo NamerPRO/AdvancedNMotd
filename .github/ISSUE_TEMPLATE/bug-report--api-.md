@@ -1,6 +1,6 @@
 ---
 name: Bug report (API)
-about: Describe this issue template's purpose here.
+about: Create a report to help to improve AdvancedNMotd API
 title: ''
 labels: ''
 assignees: ''
